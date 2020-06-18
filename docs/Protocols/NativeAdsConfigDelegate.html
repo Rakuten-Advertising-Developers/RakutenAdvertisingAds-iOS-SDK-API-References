@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gender Enumeration Reference</title>
+    <title>NativeAdsConfigDelegate Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/Gender" class="dashAnchor"></a>
-    <a title="Gender Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Protocol/NativeAdsConfigDelegate" class="dashAnchor"></a>
+    <a title="NativeAdsConfigDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">RakutenAdvertisingAds 0.0.1 Docs</a> (97% documented)</p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">RakutenAdvertisingAds Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Gender Enumeration Reference
+        NativeAdsConfigDelegate Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -107,14 +107,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Gender</h1>
+            <h1>NativeAdsConfigDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Gender</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NativeAdsConfigDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                 </div>
               </div>
-            <p>The type that represents human gender</p>
+            <p>A type that can receive native ad events</p>
 
           </section>
           <section class="section task-group-section">
@@ -123,9 +123,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21RakutenAdvertisingAds6GenderO7unknownyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/unknown" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds6GenderO7unknownyA2CmF">unknown</a>
+                    <a name="/s:21RakutenAdvertisingAds06NativeC14ConfigDelegateP11didLoadData8nativeAd0jcE0yAA0dK13Representable_p_AA0dcE0CtF"></a>
+                    <a name="//apple_ref/swift/Method/didLoadData(nativeAd:nativeAdsConfig:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds06NativeC14ConfigDelegateP11didLoadData8nativeAd0jcE0yAA0dK13Representable_p_AA0dcE0CtF">didLoadData(nativeAd:<wbr>nativeAdsConfig:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -133,16 +133,47 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gender is unknown</p>
+                        <p>Will be called in case of success ad&rsquo;s load</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didLoadData</span><span class="p">(</span><span class="nv">nativeAd</span><span class="p">:</span> <span class="kt"><a href="../Protocols/NativeAdRepresentable.html">NativeAdRepresentable</a></span><span class="p">,</span> <span class="nv">nativeAdsConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/NativeAdsConfig.html">NativeAdsConfig</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nativeAd</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>related native ad representatiom.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nativeAdsConfig</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>related config.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -150,9 +181,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21RakutenAdvertisingAds6GenderO5otheryA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/other" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds6GenderO5otheryA2CmF">other</a>
+                    <a name="/s:21RakutenAdvertisingAds06NativeC14ConfigDelegateP15didFailLoadData06nativecE05erroryAA0dcE0C_s5Error_ptF"></a>
+                    <a name="//apple_ref/swift/Method/didFailLoadData(nativeAdsConfig:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds06NativeC14ConfigDelegateP15didFailLoadData06nativecE05erroryAA0dcE0C_s5Error_ptF">didFailLoadData(nativeAdsConfig:<wbr>error:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -160,16 +191,47 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Known to be other</p>
+                        <p>Will be called in case of failing ad&rsquo;s load</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">other</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didFailLoadData</span><span class="p">(</span><span class="nv">nativeAdsConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/NativeAdsConfig.html">NativeAdsConfig</a></span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nativeAdsConfig</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>related config.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>error instance with details, what went wrong.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -177,9 +239,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21RakutenAdvertisingAds6GenderO4maleyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/male" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds6GenderO4maleyA2CmF">male</a>
+                    <a name="/s:21RakutenAdvertisingAds06NativeC14ConfigDelegateP20willLeaveApplication4fromyAA0dcE0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/willLeaveApplication(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds06NativeC14ConfigDelegateP20willLeaveApplication4fromyAA0dcE0C_tF">willLeaveApplication(from:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -187,70 +249,35 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Male</p>
+                        <p>Will be called in case of a tap on an ad with the next redirection from the app.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">male</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="n">from</span> <span class="nv">nativeAdsConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/NativeAdsConfig.html">NativeAdsConfig</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:21RakutenAdvertisingAds6GenderO6femaleyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/female" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds6GenderO6femaleyA2CmF">female</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Female</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">female</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:21RakutenAdvertisingAds6GenderO5valueSSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds6GenderO5valueSSSgvp">value</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>String single char representation</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nativeAdsConfig</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>related config.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

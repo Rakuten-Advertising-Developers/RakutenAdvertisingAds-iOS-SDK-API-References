@@ -13,7 +13,7 @@
     <a title="RakutenAdvertisingAds  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">RakutenAdvertisingAds 0.0.1 Docs</a> (97% documented)</p>
+        <p><a href="index.html">RakutenAdvertisingAds 0.0.2 Docs</a> (77% documented)</p>
         <p class="header-right"><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -31,13 +31,25 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/BannerAdsConfig.html">BannerAdsConfig</a>
+                <a href="Classes/AdsConfig.html">AdsConfig</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/NativeAdsConfig.html">NativeAdsConfig</a>
+                <a href="Classes/AdsConfig/AdType.html">– AdType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/RakutenAdvertisingAds.html">RakutenAdvertisingAds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoAd.html">VideoAd</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoAdRequest.html">VideoAdRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoAdsPresenter.html">VideoAdsPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoAdsPresenter/State.html">– State</a>
               </li>
             </ul>
           </li>
@@ -46,6 +58,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Enums/AdUnitSize.html">AdUnitSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/AdsConfigDataType.html">AdsConfigDataType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/Environment.html">Environment</a>
@@ -67,6 +82,12 @@
               <li class="nav-group-task">
                 <a href="Extensions/URL.html">URL</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Extensions/URLSession.html">URLSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/c:objc(cs)NSURLSessionDataTask">URLSessionDataTask</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -76,7 +97,10 @@
                 <a href="Protocols/AdSupportable.html">AdSupportable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/BannerAdsConfigDelegate.html">BannerAdsConfigDelegate</a>
+                <a href="Protocols/AdsConfigDelegate.html">AdsConfigDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/AdsConfigurable.html">AdsConfigurable</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/GeoInfoProvider.html">GeoInfoProvider</a>
@@ -94,10 +118,33 @@
                 <a href="Protocols/NativeAdRepresentable.html">NativeAdRepresentable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/NativeAdsConfigDelegate.html">NativeAdsConfigDelegate</a>
+                <a href="Protocols/TargetingInfoProvider.html">TargetingInfoProvider</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/TargetingInfoProvider.html">TargetingInfoProvider</a>
+                <a href="Protocols/URLSessionDataTaskProtocol.html">URLSessionDataTaskProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/URLSessionProtocol.html">URLSessionProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/VideoAdsPresenterDelegate.html">VideoAdsPresenterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/VideoPlayerProtocol.html">VideoPlayerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/VideoOptions.html">VideoOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoOptions/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoOptions/ResizePolicy.html">– ResizePolicy</a>
               </li>
             </ul>
           </li>
@@ -109,7 +156,7 @@
             
             <h1 id='rakutenadvertisingads-ios-sdk' class='heading'>RakutenAdvertisingAds iOS SDK</h1>
 
-<p>Rakuten Advertising Ads SDK provide the ability to show ads.</p>
+<p>Rakuten Advertising Ads SDK provides in-app advertising supports for Banner,Native and Video Ad formats. The scope of this document is to cover the iOS developer integration steps. Before this integration, you would need a Rakuten Advertising publisher account and active Ad Units configured in our backend (RSSP) Ad servers. Please contact this <TBD email> if you are organically visiting this page and help in setting up an account in order to monetize your mobile apps through Rakuten Advertising SDK. </p>
 
 <p><img src="https://rakuten-advertising-developers.github.io/RakutenAdvertisingAds-iOS-SDK-API-References/" alt="[RakutenAdvertisingAds](https://raw.githubusercontent.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK-API-References/master/docs/badge.svg)">
 <img src="https://img.shields.io/github/license/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK?label=License" alt="GitHub">
@@ -123,7 +170,7 @@
 </ul>
 <h2 id='integration' class='heading'>Integration</h2>
 
-<p>Use <a href="https://cocoapods.org">CocoaPods</a> to install RakutenAdvertisingAds pod. If you dont have Cocoapods installed follow this <a href="https://guides.cocoapods.org/using/getting-started">guide</a> for intallations. If you have Cocopods already installed add the following lines in your Podfile:</p>
+<p>We also support Manual download but we highly recommend to use <a href="https://cocoapods.org">CocoaPods</a> to install RakutenAdvertisingAds pod. If you dont have Cocoapods installed follow this <a href="https://guides.cocoapods.org/using/getting-started">guide</a> for intallations. If you have Cocopods already installed, add the following lines in your Podfile:</p>
 <pre class="highlight ruby"><code><span class="n">source</span> <span class="s1">'https://github.com/CocoaPods/Specs.git'</span>
 <span class="n">source</span> <span class="s1">'https://github.com/Rakuten-Advertising-Developers/Specs.git'</span>
 
@@ -140,25 +187,29 @@
 </code></pre>
 <h2 id='setup' class='heading'>Setup</h2>
 
-<p>Import required in all places where you would like to use SDK</p>
+<p>Import RakutenAdvertisingAds in your module</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">RakutenAdvertisingAds</span>
 </code></pre>
-<h5 id='targeting' class='heading'>Targeting</h5>
+<h5 id='gdpr-consent-settings' class='heading'>GDPR Consent settings</h5>
 
-<p>Setting information related to GDPR</p>
+<p>Assumption is you have separately obtained consents from European users to use their data. if so, use the below code as reference to set the GRPR related information.</p>
 <pre class="highlight swift"><code><span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">targeting</span><span class="o">.</span><span class="n">subjectToGDPR</span> <span class="o">=</span> <span class="kc">true</span>
 <span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">targeting</span><span class="o">.</span><span class="n">gdprMasking</span> <span class="o">=</span> <span class="kc">false</span>
 <span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">targeting</span><span class="o">.</span><span class="n">gdprConsentString</span> <span class="o">=</span> <span class="o">&lt;</span><span class="kt">Some</span> <span class="kt">Consent</span> <span class="kt">String</span><span class="o">&gt;</span>
 </code></pre>
 <h5 id='advertising-identifier' class='heading'>Advertising Identifier</h5>
 
-<p>Provide user&rsquo;s advertising identifier (<code>import AdSupport</code> required)</p>
+<p>Use the AdSupport framework to obtain an advertising identifier. Please refer apple <a href="https://developer.apple.com/documentation/adsupport">AdSupport</a> documentation for more details.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AdSupport</span>
+</code></pre>
 <pre class="highlight swift"><code><span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">adSupport</span><span class="o">.</span><span class="n">isTrackingEnabled</span> <span class="o">=</span> <span class="kt">ASIdentifierManager</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="n">isAdvertisingTrackingEnabled</span>
 <span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">adSupport</span><span class="o">.</span><span class="n">advertisingIdentifier</span> <span class="o">=</span> <span class="kt">ASIdentifierManager</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="n">advertisingIdentifier</span><span class="o">.</span><span class="n">uuidString</span>
 </code></pre>
-<h5 id='geo-data' class='heading'>Geo data</h5>
+<h5 id='geographic-location' class='heading'>Geographic Location</h5>
 
-<p>Provide user&rsquo;s location info (<code>import CoreLocation</code> required)</p>
+<p>To obtain the Geographic location, please refer <a href="https://developer.apple.com/documentation/corelocation">CoreLocation</a> documentation. Below is an example of how to obtain and set the geolocation.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">CoreLocation</span>
+</code></pre>
 <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">AppDelegate</span><span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">UIApplicationDelegate</span> <span class="p">{</span>
 
     <span class="kd">private</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">locationManager</span><span class="p">:</span> <span class="kt">CLLocationManager</span> <span class="o">=</span> <span class="p">{</span>
@@ -176,18 +227,28 @@
 
     <span class="kd">func</span> <span class="nf">configureLocation</span><span class="p">()</span> <span class="p">{</span>
 
-        <span class="k">let</span> <span class="nv">status</span> <span class="o">=</span> <span class="kt">CLLocationManager</span><span class="o">.</span><span class="nf">authorizationStatus</span><span class="p">()</span>
-        <span class="k">switch</span> <span class="n">status</span> <span class="p">{</span>
-        <span class="k">case</span> <span class="o">.</span><span class="nv">notDetermined</span><span class="p">:</span>
-            <span class="n">locationManager</span><span class="o">.</span><span class="nf">requestWhenInUseAuthorization</span><span class="p">()</span>
-        <span class="k">case</span> <span class="o">.</span><span class="n">denied</span><span class="p">,</span> <span class="o">.</span><span class="nv">restricted</span><span class="p">:</span>
-            <span class="nf">print</span><span class="p">(</span><span class="s">"Location Services are disabled"</span><span class="p">)</span>
-        <span class="k">case</span> <span class="o">.</span><span class="n">authorizedAlways</span><span class="p">,</span> <span class="o">.</span><span class="nv">authorizedWhenInUse</span><span class="p">:</span>
-            <span class="n">locationManager</span><span class="o">.</span><span class="nf">startUpdatingLocation</span><span class="p">()</span>
-        <span class="kd">@unknown</span> <span class="k">default</span><span class="p">:</span>
-            <span class="k">break</span>
-        <span class="p">}</span>
+        <span class="nf">handleAuthorization</span><span class="p">(</span><span class="nv">status</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">.</span><span class="nf">authorizationStatus</span><span class="p">())</span>
     <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">handleAuthorization</span><span class="p">(</span><span class="nv">status</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span> <span class="p">{</span>
+
+         <span class="k">let</span> <span class="nv">status</span> <span class="o">=</span> <span class="kt">CLLocationManager</span><span class="o">.</span><span class="nf">authorizationStatus</span><span class="p">()</span>
+         <span class="k">switch</span> <span class="n">status</span> <span class="p">{</span>
+         <span class="k">case</span> <span class="o">.</span><span class="nv">notDetermined</span><span class="p">:</span>
+             <span class="n">locationManager</span><span class="o">.</span><span class="nf">requestWhenInUseAuthorization</span><span class="p">()</span>
+         <span class="k">case</span> <span class="o">.</span><span class="n">denied</span><span class="p">,</span> <span class="o">.</span><span class="nv">restricted</span><span class="p">:</span>
+             <span class="k">let</span> <span class="nv">alert</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Location Services are disabled"</span><span class="p">,</span>
+                                           <span class="nv">message</span><span class="p">:</span> <span class="s">"Please enable Location Services in your Settings"</span><span class="p">,</span>
+                                           <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="n">alert</span><span class="p">)</span>
+             <span class="k">let</span> <span class="nv">okAction</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="k">default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+             <span class="n">alert</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">okAction</span><span class="p">)</span>
+             <span class="n">window</span><span class="p">?</span><span class="o">.</span><span class="n">rootViewController</span><span class="p">?</span><span class="o">.</span><span class="nf">present</span><span class="p">(</span><span class="n">alert</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+         <span class="k">case</span> <span class="o">.</span><span class="n">authorizedAlways</span><span class="p">,</span> <span class="o">.</span><span class="nv">authorizedWhenInUse</span><span class="p">:</span>
+             <span class="n">locationManager</span><span class="o">.</span><span class="nf">startUpdatingLocation</span><span class="p">()</span>
+         <span class="kd">@unknown</span> <span class="k">default</span><span class="p">:</span>
+             <span class="k">break</span>
+         <span class="p">}</span>
+     <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kd">extension</span> <span class="kt">AppDelegate</span><span class="p">:</span> <span class="kt">CLLocationManagerDelegate</span> <span class="p">{</span>
@@ -199,119 +260,235 @@
         <span class="p">}</span>
         <span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">geoInfo</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">location</span>
     <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didChangeAuthorization</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="nf">handleAuthorization</span><span class="p">(</span><span class="nv">status</span><span class="p">:</span> <span class="n">status</span><span class="p">)</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
 <h5 id='logging' class='heading'>Logging</h5>
 
-<p>For debugging purpose you can enable network logs. <code>RakutenAdvertisingAds.shared.logger</code> property is responsible for this process.</p>
+<p>For debugging purpose you can enable network logs using <code>RakutenAdvertisingAds.shared.logger</code>.</p>
 <pre class="highlight swift"><code><span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">enabled</span> <span class="o">=</span> <span class="kc">true</span>
 </code></pre>
 <h2 id='ad-formats' class='heading'>Ad Formats</h2>
 
-<blockquote>
-<p>Create an ad unit first. You will need that ad unit’s ID later to request ads from RSSP server.</p>
-</blockquote>
-<h3 id='banner-ads' class='heading'>Banner Ads</h3>
+<p>RakutenAdvertising Ads SDK supports Banner, Native and Video Ad formats, provided you have valid Ad Unit for the respective formats.</p>
 
-<p>In your view controller declare a BannerAdsConfig instance and container view, where ads should be placed.</p>
+<p>As a first step, in your ViewController declare AdsConfig instance and Container view where ads will be placed.</p>
 <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
     <span class="o">...</span>
-    <span class="k">var</span> <span class="nv">bannerAdsConfig</span><span class="p">:</span> <span class="kt">BannerAdsConfig</span><span class="p">?</span>
+    <span class="k">var</span> <span class="nv">ad</span><span class="p">:</span> <span class="kt">AdsConfig</span><span class="p">?</span>
     <span class="k">var</span> <span class="nv">placeholderView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span> <span class="kt">UIView</span><span class="p">()</span>
     <span class="o">...</span>
 <span class="p">}</span>
 </code></pre>
 
 <blockquote>
-<p><code>placeholderView</code> should have valid autolayout constraints and added to view hierarchy</p>
+<p>In this example assumption is  <code>placeholderView</code> have proper autolayout constraints and added to view hierarchy</p>
 </blockquote>
 
-<ul>
-<li>Instantiate your bannerAdsConfig, passing Ad Unit. This is typically done in -viewDidLoad.</li>
-<li>Register your view controller as the bannerAdsConfig&rsquo;s delegate. (optional step)</li>
-<li>If you know the size of the banner you’d like to request, pass it to adUnitSize property.</li>
-<li>Provide refresh time interval or set to <code>.never</code> if you would like a single load. (optional step)</li>
-<li>Load an ad</li>
-</ul>
+<p>Optionally implement the AdsConfigDelegate in your ViewController to handle any addition code during Ad load events. </p>
+<pre class="highlight swift"><code>
+<span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">AdsConfigDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">didLoadData</span><span class="p">(</span><span class="nv">adsConfig</span><span class="p">:</span> <span class="kt">AdsConfigurable</span><span class="p">,</span> <span class="nv">dataType</span><span class="p">:</span> <span class="kt">AdsConfigDataType</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//your implementation  </span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">didFailLoadData</span><span class="p">(</span><span class="nv">adsConfig</span><span class="p">:</span> <span class="kt">AdsConfigurable</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//your implementation  </span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="n">from</span> <span class="nv">adsConfig</span><span class="p">:</span> <span class="kt">AdsConfigurable</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//your implementation  </span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='banner' class='heading'>Banner</h4>
+
+<p>Here is an example of how to create Banner Ad</p>
 <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
 
-    <span class="k">self</span><span class="o">.</span><span class="n">bannerAdsConfig</span> <span class="o">=</span> <span class="kt">BannerAdsConfig</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="o">&lt;</span><span class="kt">YOUR_AD_UNIT</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">containerView</span><span class="p">:</span> <span class="n">placeholderView</span><span class="p">)</span>
-    <span class="k">self</span><span class="o">.</span><span class="n">bannerAdsConfig</span><span class="p">?</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
-    <span class="k">self</span><span class="o">.</span><span class="n">bannerAdsConfig</span><span class="p">?</span><span class="o">.</span><span class="n">adUnitSize</span> <span class="o">=</span> <span class="o">.</span><span class="n">mediumRectangle</span>
-    <span class="k">self</span><span class="o">.</span><span class="n">bannerAdsConfig</span><span class="p">?</span><span class="o">.</span><span class="n">requestTimeInterval</span> <span class="o">=</span> <span class="o">.</span><span class="nf">seconds</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-    <span class="k">self</span><span class="o">.</span><span class="n">bannerAdsConfig</span><span class="p">?</span><span class="o">.</span><span class="nf">startLoading</span><span class="p">()</span>
+    <span class="k">let</span> <span class="nv">adType</span><span class="p">:</span> <span class="kt">AdsConfig</span><span class="o">.</span><span class="kt">AdType</span> <span class="o">=</span> <span class="o">.</span><span class="nf">banner</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span> <span class="o">.</span><span class="n">mediumRectangle</span><span class="p">)</span>
+
+    <span class="k">let</span> <span class="nv">bannerAdConfig</span> <span class="o">=</span> <span class="kt">AdsConfig</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="o">&lt;</span><span class="kt">YOUR_AD_UNIT</span><span class="o">&gt;</span><span class="p">,</span>
+                           <span class="nv">containerView</span><span class="p">:</span> <span class="n">placeholderView</span><span class="p">,</span>
+                           <span class="nv">type</span><span class="p">:</span> <span class="n">adType</span><span class="p">)</span>
+    <span class="n">bannerAdConfig</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+
+    <span class="n">ad</span> <span class="o">=</span> <span class="n">bannerAdConfig</span>
+    <span class="n">ad</span><span class="p">?</span><span class="o">.</span><span class="nf">startLoading</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre>
+<h4 id='native' class='heading'>Native</h4>
 
-<p>Optionally declare that your view controller implements the BannerAdsConfigDelegate protocol.</p>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">BannerAdsConfigDelegate</span> <span class="p">{</span>
+<p>Here is an example of how to create Native Ad</p>
+<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
 
-    <span class="kd">func</span> <span class="nf">didLoadData</span><span class="p">(</span><span class="nv">bannerAdsConfig</span><span class="p">:</span> <span class="kt">BannerAdsConfig</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//your implementation</span>
-    <span class="p">}</span>
+    <span class="k">let</span> <span class="nv">nativeAdView</span> <span class="o">=</span> <span class="kt">NativeAdView</span><span class="o">.</span><span class="n">instance</span>
+    <span class="k">let</span> <span class="nv">adType</span><span class="p">:</span> <span class="kt">AdsConfig</span><span class="o">.</span><span class="kt">AdType</span> <span class="o">=</span> <span class="o">.</span><span class="nf">native</span><span class="p">(</span><span class="nv">assets</span><span class="p">:</span> <span class="kt">NativeAdAsset</span><span class="o">.</span><span class="n">defaultAssets</span><span class="p">,</span> <span class="nv">nativeView</span><span class="p">:</span> <span class="n">nativeAdView</span><span class="p">)</span>
 
-    <span class="kd">func</span> <span class="nf">didFailLoadData</span><span class="p">(</span><span class="nv">bannerAdsConfig</span><span class="p">:</span> <span class="kt">BannerAdsConfig</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//your implementation</span>
-    <span class="p">}</span>
+    <span class="k">let</span> <span class="nv">nativeAdConfig</span> <span class="o">=</span> <span class="kt">AdsConfig</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="n">settings</span><span class="o">.</span><span class="n">adSpot</span><span class="p">,</span>
+                                   <span class="nv">containerView</span><span class="p">:</span> <span class="n">placeholderView</span><span class="p">,</span>
+                                   <span class="nv">type</span><span class="p">:</span> <span class="n">adType</span><span class="p">)</span>
+    <span class="n">nativeAdConfig</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
 
-    <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="n">from</span> <span class="nv">bannerAdView</span><span class="p">:</span> <span class="kt">BannerAdsConfig</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//your implementation</span>
-    <span class="p">}</span>
+    <span class="n">ad</span> <span class="o">=</span> <span class="n">nativeAdConfig</span>
+    <span class="n">ad</span><span class="p">?</span><span class="o">.</span><span class="nf">startLoading</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre>
-<h3 id='native-ads' class='heading'>Native Ads</h3>
+<h4 id='hybrid' class='heading'>Hybrid</h4>
 
-<p>In your view controller declare a NativeAdsConfig instance and container view, where native ads should be placed.</p>
+<p>Here is an example of how to create Banner or Native Ad in a single Ad request. </p>
+<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+
+    <span class="k">let</span> <span class="nv">bannerAdType</span><span class="p">:</span> <span class="kt">AdsConfig</span><span class="o">.</span><span class="kt">AdType</span> <span class="o">=</span> <span class="o">.</span><span class="nf">banner</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span> <span class="o">.</span><span class="n">mediumRectangle</span><span class="p">)</span>
+
+    <span class="k">let</span> <span class="nv">nativeAdView</span> <span class="o">=</span> <span class="kt">NativeAdView</span><span class="o">.</span><span class="n">instance</span>
+    <span class="k">let</span> <span class="nv">nativeAdType</span><span class="p">:</span> <span class="kt">AdsConfig</span><span class="o">.</span><span class="kt">AdType</span> <span class="o">=</span> <span class="o">.</span><span class="nf">native</span><span class="p">(</span><span class="nv">assets</span><span class="p">:</span> <span class="kt">NativeAdAsset</span><span class="o">.</span><span class="n">defaultAssets</span><span class="p">,</span> <span class="nv">nativeView</span><span class="p">:</span> <span class="n">nativeAdView</span><span class="p">)</span>
+
+    <span class="k">let</span> <span class="nv">hybridAdConfig</span> <span class="o">=</span> <span class="kt">AdsConfig</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="n">settings</span><span class="o">.</span><span class="n">adSpot</span><span class="p">,</span>
+                                   <span class="nv">containerView</span><span class="p">:</span> <span class="n">placeholderView</span><span class="p">,</span>
+                                   <span class="nv">types</span><span class="p">:</span> <span class="p">[</span><span class="n">bannerAdType</span><span class="p">,</span> <span class="n">nativeAdType</span><span class="p">])</span>
+
+    <span class="n">hybridAdConfig</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+
+    <span class="n">ad</span> <span class="o">=</span> <span class="n">hybridAdConfig</span>
+    <span class="n">ad</span><span class="p">?</span><span class="o">.</span><span class="nf">startLoading</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='video-ads' class='heading'>Video Ads</h3>
+
+<p>For Video ads, in ViewController you need to declare a VideoAdsPresenter instance and Container view, where Video ad will be placed. Refer the following example on how to serve Video Ads. </p>
 <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
     <span class="o">...</span>
-    <span class="k">var</span> <span class="nv">nativeAdRequest</span><span class="p">:</span> <span class="kt">NativeAdsConfig</span><span class="p">?</span>
+    <span class="k">var</span> <span class="nv">videoAdPresenter</span><span class="p">:</span> <span class="kt">VideoAdsPresenter</span><span class="p">?</span>
     <span class="k">var</span> <span class="nv">placeholderView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span> <span class="kt">UIView</span><span class="p">()</span>
     <span class="o">...</span>
 <span class="p">}</span>
 </code></pre>
 
-<blockquote>
-<p><code>placeholderView</code> should have valid autolayout constraints and added to view hierarchy</p>
-</blockquote>
+<p>Then we have to do the following steps.</p>
 
 <ul>
-<li>Instantiate adView as UIView subclass instance that confirms to NativeAdRanderableView protocol.</li>
-<li>Instantiate your nativeAdRequest, passing Ad Unit value. This is typically done in -viewDidLoad.</li>
-<li>Register your view controller as the nativeAdRequest&rsquo;s delegate. (optional step)</li>
-<li>Pass the list of expected assets.</li>
-<li>Provide refresh time interval or set to .never if you would like single load. (optional step)</li>
-<li>Load an ad</li>
+<li><p>Load Ad</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loadVideoAd</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="kt">VideoAdRequest</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="o">&lt;</span><span class="kt">YOUR_AD_UNIT</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="kt">VideoAd</span><span class="o">.</span><span class="nf">loadAd</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">):</span>
+        <span class="k">self</span><span class="p">?</span><span class="o">.</span><span class="nf">configureVideoPresenter</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">ad</span><span class="p">)</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="c1">//Handle error case</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></li>
+<li><p>Configure VideoAdsPresenter</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureVideoPresenter</span><span class="p">(</span><span class="n">with</span> <span class="nv">ad</span><span class="p">:</span> <span class="kt">VideoAd</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="n">videoAdPresenter</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
+
+    <span class="k">let</span> <span class="nv">presenter</span> <span class="o">=</span> <span class="kt">VideoAdsPresenter</span><span class="p">(</span><span class="nv">containerView</span><span class="p">:</span> <span class="n">placeholderView</span><span class="p">)</span>
+
+    <span class="k">let</span> <span class="nv">actions</span><span class="p">:</span> <span class="p">[</span><span class="kt">VideoOptions</span><span class="o">.</span><span class="kt">Action</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="o">.</span><span class="nf">sound</span><span class="p">(</span><span class="nv">active</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"🔈"</span><span class="p">),</span>
+               <span class="nv">inactive</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"🔇"</span><span class="p">)),</span>
+        <span class="o">.</span><span class="nf">playback</span><span class="p">(</span><span class="nv">active</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"⏸"</span><span class="p">),</span>
+                  <span class="nv">inactive</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"▶️"</span><span class="p">)),</span>
+        <span class="o">.</span><span class="nf">skip</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"Skip ⏭"</span><span class="p">))</span>
+    <span class="p">]</span>
+    <span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">VideoOptions</span><span class="p">(</span><span class="nv">actions</span><span class="p">:</span> <span class="n">actions</span><span class="p">)</span>
+    <span class="n">presenter</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">options</span>
+
+    <span class="n">videoAdPresenter</span> <span class="o">=</span> <span class="n">presenter</span>
+<span class="p">}</span>
+
+<span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="nf">enqueue</span><span class="p">(</span><span class="nv">ad</span><span class="p">:</span> <span class="n">ad</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></li>
+<li><p>Play Video Ad</p>
+<pre class="highlight swift"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">playButtonPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="nf">play</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre></li>
 </ul>
-<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
 
-    <span class="k">let</span> <span class="nv">adView</span> <span class="o">=</span> <span class="kt">NativeAdView</span><span class="o">.</span><span class="n">instance</span>
+<p>Optionally implement the VideoAdsPresenterDelegate in your ViewController to handle any additional events.</p>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">VideoAdsPresenterDelegate</span> <span class="p">{</span>
 
-    <span class="k">self</span><span class="o">.</span><span class="n">nativeAdRequest</span> <span class="o">=</span> <span class="kt">NativeAdsConfig</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="o">&lt;</span><span class="kt">YOUR_AD_UNIT</span><span class="o">&gt;</span><span class="p">,</span>
-                                           <span class="nv">containerView</span><span class="p">:</span> <span class="n">placeholderView</span><span class="p">,</span>
-                                           <span class="nv">nativeView</span><span class="p">:</span> <span class="n">adView</span><span class="p">)</span>
-    <span class="k">self</span><span class="o">.</span><span class="n">nativeAdRequest</span><span class="p">?</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
-    <span class="k">self</span><span class="o">.</span><span class="n">nativeAdRequest</span><span class="p">?</span><span class="o">.</span><span class="n">assets</span> <span class="o">=</span> <span class="kt">NativeAdAsset</span><span class="o">.</span><span class="n">allCases</span>
-    <span class="k">self</span><span class="o">.</span><span class="n">nativeAdRequest</span><span class="p">?</span><span class="o">.</span><span class="n">requestTimeInterval</span> <span class="o">=</span> <span class="o">.</span><span class="nf">seconds</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-    <span class="k">self</span><span class="o">.</span><span class="n">nativeAdRequest</span><span class="p">?</span><span class="o">.</span><span class="nf">startLoading</span><span class="p">()</span>
+    <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="n">from</span> <span class="nv">presenter</span><span class="p">:</span> <span class="kt">VideoAdsPresenter</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//your implementation </span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
 
-<p>Optionally declare that your view controller implements the NativeAdsConfigDelegate protocol.</p>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">NativeAdsConfigDelegate</span> <span class="p">{</span>
+<p>or observe states of played ad, using videoAdPresenter.stateObserver closure</p>
+<pre class="highlight swift"><code> <span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="n">stateObserver</span> <span class="o">=</span> <span class="p">{</span> <span class="n">state</span> <span class="k">in</span>
 
-    <span class="kd">func</span> <span class="nf">didLoadData</span><span class="p">(</span><span class="nv">nativeAd</span><span class="p">:</span> <span class="kt">NativeAdRepresentable</span><span class="p">,</span> <span class="nv">nativeAdsConfig</span><span class="p">:</span> <span class="kt">NativeAdsConfig</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">switch</span> <span class="n">state</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">stopped</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">):</span>
+       <span class="c1">//your implementation</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">playing</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">,</span> <span class="k">let</span> <span class="nv">progress</span><span class="p">)</span>
+        <span class="c1">//your implementation</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">paused</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">,</span> <span class="k">let</span> <span class="nv">progress</span><span class="p">):</span>
+        <span class="c1">//your implementation</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">completed</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">):</span>
+        <span class="c1">//your implementation</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">skipped</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">):</span>
         <span class="c1">//your implementation</span>
     <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='instream-ads' class='heading'>Instream Ads</h3>
 
-    <span class="kd">func</span> <span class="nf">didFailLoadData</span><span class="p">(</span><span class="nv">nativeAdsConfig</span><span class="p">:</span> <span class="kt">NativeAdsConfig</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//your implementation</span>
-    <span class="p">}</span>
+<p>Instream ads are video ads that are shown over an existing video player of the host app. They can be shown before, after, or at any point during video content with a seamless transition from ad to app video content.</p>
 
-    <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="n">from</span> <span class="nv">nativeAdsConfig</span><span class="p">:</span> <span class="kt">NativeAdsConfig</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//your implementation   </span>
+<p>The approach is pretty similar to regular video ads. But in this case, you have to pass the main video player view as a container</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureVideoPresenter</span><span class="p">(</span><span class="n">with</span> <span class="nv">ad</span><span class="p">:</span> <span class="kt">VideoAd</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">if</span> <span class="n">videoAdPresenter</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="n">videoAdPresenter</span> <span class="o">=</span> <span class="kt">VideoAdsPresenter</span><span class="p">(</span><span class="nv">containerView</span><span class="p">:</span> <span class="n">mainPlayerView</span><span class="p">)</span>
+        <span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="n">stateObserver</span> <span class="o">=</span> <span class="nf">handleAds</span><span class="p">(</span><span class="nv">state</span><span class="p">:)</span>
     <span class="p">}</span>
+    <span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="nf">enqueue</span><span class="p">(</span><span class="nv">ad</span><span class="p">:</span> <span class="n">ad</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>To be notified of instream ad lifecycle events, use <code>stateObserver</code> closure</p>
+<pre class="highlight swift"><code> <span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="n">stateObserver</span> <span class="o">=</span> <span class="p">{</span> <span class="n">state</span> <span class="k">in</span>
+
+    <span class="k">switch</span> <span class="n">state</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nv">paused</span><span class="p">:</span>
+            <span class="c1">//your implementation</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">playing</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="k">let</span> <span class="nv">progress</span><span class="p">):</span>
+        <span class="n">mainPlayer</span><span class="o">.</span><span class="nf">pause</span><span class="p">()</span>
+    <span class="k">case</span> <span class="o">.</span><span class="n">completed</span><span class="p">,</span> <span class="o">.</span><span class="n">skipped</span><span class="p">,</span> <span class="o">.</span><span class="nv">stopped</span><span class="p">:</span>
+        <span class="n">mainPlayer</span><span class="o">.</span><span class="nf">play</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Also you can control ads playing process via property <code>videoAdPresenter?.player</code> which conforms to protocol <code><a href="Protocols/VideoPlayerProtocol.html">VideoPlayerProtocol</a></code></p>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">VideoPlayerProtocol</span> <span class="p">{</span>
+
+    <span class="k">var</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+    <span class="k">var</span> <span class="nv">isMuted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+    <span class="kd">func</span> <span class="nf">mute</span><span class="p">(</span><span class="n">_</span> <span class="nv">mute</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+    <span class="kd">func</span> <span class="nf">play</span><span class="p">()</span>
+    <span class="kd">func</span> <span class="nf">resume</span><span class="p">()</span>
+    <span class="kd">func</span> <span class="nf">pause</span><span class="p">()</span>
+    <span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span>
+    <span class="kd">func</span> <span class="nf">skip</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre>
 <h2 id='example' class='heading'>Example</h2>
@@ -332,7 +509,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2020-07-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

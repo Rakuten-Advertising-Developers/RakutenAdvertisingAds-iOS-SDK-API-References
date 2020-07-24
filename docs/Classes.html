@@ -14,7 +14,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">RakutenAdvertisingAds 0.0.1 Docs</a> (97% documented)</p>
+        <p><a href="index.html">RakutenAdvertisingAds 0.0.2 Docs</a> (77% documented)</p>
         <p class="header-right"><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -32,13 +32,25 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/BannerAdsConfig.html">BannerAdsConfig</a>
+                <a href="Classes/AdsConfig.html">AdsConfig</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/NativeAdsConfig.html">NativeAdsConfig</a>
+                <a href="Classes/AdsConfig/AdType.html">– AdType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/RakutenAdvertisingAds.html">RakutenAdvertisingAds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoAd.html">VideoAd</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoAdRequest.html">VideoAdRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoAdsPresenter.html">VideoAdsPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoAdsPresenter/State.html">– State</a>
               </li>
             </ul>
           </li>
@@ -47,6 +59,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Enums/AdUnitSize.html">AdUnitSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/AdsConfigDataType.html">AdsConfigDataType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/Environment.html">Environment</a>
@@ -68,6 +83,12 @@
               <li class="nav-group-task">
                 <a href="Extensions/URL.html">URL</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Extensions/URLSession.html">URLSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/c:objc(cs)NSURLSessionDataTask">URLSessionDataTask</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -77,7 +98,10 @@
                 <a href="Protocols/AdSupportable.html">AdSupportable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/BannerAdsConfigDelegate.html">BannerAdsConfigDelegate</a>
+                <a href="Protocols/AdsConfigDelegate.html">AdsConfigDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/AdsConfigurable.html">AdsConfigurable</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/GeoInfoProvider.html">GeoInfoProvider</a>
@@ -95,10 +119,33 @@
                 <a href="Protocols/NativeAdRepresentable.html">NativeAdRepresentable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/NativeAdsConfigDelegate.html">NativeAdsConfigDelegate</a>
+                <a href="Protocols/TargetingInfoProvider.html">TargetingInfoProvider</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/TargetingInfoProvider.html">TargetingInfoProvider</a>
+                <a href="Protocols/URLSessionDataTaskProtocol.html">URLSessionDataTaskProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/URLSessionProtocol.html">URLSessionProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/VideoAdsPresenterDelegate.html">VideoAdsPresenterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/VideoPlayerProtocol.html">VideoPlayerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/VideoOptions.html">VideoOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoOptions/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoOptions/ResizePolicy.html">– ResizePolicy</a>
               </li>
             </ul>
           </li>
@@ -117,9 +164,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21RakutenAdvertisingAds06BannerC6ConfigC"></a>
-                    <a name="//apple_ref/swift/Class/BannerAdsConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds06BannerC6ConfigC">BannerAdsConfig</a>
+                    <a name="/s:21RakutenAdvertisingAds0C6ConfigC"></a>
+                    <a name="//apple_ref/swift/Class/AdsConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C6ConfigC">AdsConfig</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -127,45 +174,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The class that encapsulates configuration for banner ads</p>
+                        <p>The class that encapsulates ads configuration</p>
 
-                        <a href="Classes/BannerAdsConfig.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/AdsConfig.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BannerAdsConfig</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">BannerAdsConfig</span><span class="p">:</span> <span class="kt"><a href="Protocols/Loadable.html">Loadable</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:21RakutenAdvertisingAds06NativeC6ConfigC"></a>
-                    <a name="//apple_ref/swift/Class/NativeAdsConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds06NativeC6ConfigC">NativeAdsConfig</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The class that encapsulates configuration for native ads</p>
-
-                        <a href="Classes/NativeAdsConfig.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">NativeAdsConfig</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">NativeAdsConfig</span><span class="p">:</span> <span class="kt"><a href="Protocols/Loadable.html">Loadable</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdsConfig</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AdsConfigurable.html">AdsConfigurable</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AdsConfig</span><span class="p">:</span> <span class="kt"><a href="Protocols/Loadable.html">Loadable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -200,12 +218,96 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds7VideoAdC"></a>
+                    <a name="//apple_ref/swift/Class/VideoAd" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds7VideoAdC">VideoAd</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/VideoAd.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">VideoAd</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds14VideoAdRequestC"></a>
+                    <a name="//apple_ref/swift/Class/VideoAdRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds14VideoAdRequestC">VideoAdRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/VideoAdRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">VideoAdRequest</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds05VideoC9PresenterC"></a>
+                    <a name="//apple_ref/swift/Class/VideoAdsPresenter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds05VideoC9PresenterC">VideoAdsPresenter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/VideoAdsPresenter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">VideoAdsPresenter</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2020-07-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

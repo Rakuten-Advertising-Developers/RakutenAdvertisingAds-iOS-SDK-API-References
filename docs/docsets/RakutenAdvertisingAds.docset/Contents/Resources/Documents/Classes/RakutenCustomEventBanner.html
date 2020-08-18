@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Loadable Protocol Reference</title>
+    <title>RakutenCustomEventBanner Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/Loadable" class="dashAnchor"></a>
-    <a title="Loadable Protocol Reference"></a>
+    <a name="//apple_ref/swift/Class/RakutenCustomEventBanner" class="dashAnchor"></a>
+    <a title="RakutenCustomEventBanner Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">RakutenAdvertisingAds 0.0.3 Docs</a> (84% documented)</p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">RakutenAdvertisingAds Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Loadable Protocol Reference
+        RakutenCustomEventBanner Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -160,25 +160,36 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Loadable</h1>
+            <h1>RakutenCustomEventBanner</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Loadable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">RakutenCustomEventBanner</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">GADCustomEventBanner</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">RakutenCustomEventBanner</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigDelegate.html">AdsConfigDelegate</a></span></code></pre>
 
                 </div>
               </div>
-            <p>A type that describes loading activity</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21RakutenAdvertisingAds8LoadableP12startLoadingyyF"></a>
-                    <a name="//apple_ref/swift/Method/startLoading()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds8LoadableP12startLoadingyyF">startLoading()</a>
+                    <a name="/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventBanner(py)delegate"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventBanner(py)delegate">delegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -186,14 +197,57 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Start loading activity</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startLoading</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">GADCustomEventBannerDelegate</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public"></a>
+                <a name="//apple_ref/swift/Section/Public" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public"></a>
+                  <h3 class="section-name"><p>Public</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventBanner(im)requestBannerAd:parameter:label:request:"></a>
+                    <a name="//apple_ref/swift/Method/requestAd(_:parameter:label:request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventBanner(im)requestBannerAd:parameter:label:request:">requestAd(_:<wbr>parameter:<wbr>label:<wbr>request:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">requestAd</span><span class="p">(</span><span class="n">_</span> <span class="nv">adSize</span><span class="p">:</span> <span class="kt">GADAdSize</span><span class="p">,</span>
+                      <span class="n">parameter</span> <span class="nv">serverParameter</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                      <span class="n">label</span> <span class="nv">serverLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                      <span class="nv">request</span><span class="p">:</span> <span class="kt">GADCustomEventRequest</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -203,9 +257,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21RakutenAdvertisingAds8LoadableP11stopLoadingyyF"></a>
-                    <a name="//apple_ref/swift/Method/stopLoading()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds8LoadableP11stopLoadingyyF">stopLoading()</a>
+                    <a name="/s:21RakutenAdvertisingAds0C14ConfigDelegateP11didLoadData03adsD08dataTypeyAA0C12Configurable_p_AA0cdhK0OtF"></a>
+                    <a name="//apple_ref/swift/Method/didLoadData(adsConfig:dataType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C14ConfigDelegateP11didLoadData03adsD08dataTypeyAA0C12Configurable_p_AA0cdhK0OtF">didLoadData(adsConfig:<wbr>dataType:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -213,14 +267,65 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Stop loading activity</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopLoading</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didLoadData</span><span class="p">(</span><span class="nv">adsConfig</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigurable.html">AdsConfigurable</a></span><span class="p">,</span> <span class="nv">dataType</span><span class="p">:</span> <span class="kt"><a href="../Enums/AdsConfigDataType.html">AdsConfigDataType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds0C14ConfigDelegateP15didFailLoadData03adsD05erroryAA0C12Configurable_p_s5Error_ptF"></a>
+                    <a name="//apple_ref/swift/Method/didFailLoadData(adsConfig:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C14ConfigDelegateP15didFailLoadData03adsD05erroryAA0C12Configurable_p_s5Error_ptF">didFailLoadData(adsConfig:<wbr>error:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didFailLoadData</span><span class="p">(</span><span class="nv">adsConfig</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigurable.html">AdsConfigurable</a></span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds0C14ConfigDelegateP20willLeaveApplication4fromyAA0C12Configurable_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/willLeaveApplication(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C14ConfigDelegateP20willLeaveApplication4fromyAA0C12Configurable_p_tF">willLeaveApplication(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="n">from</span> <span class="nv">adsConfig</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigurable.html">AdsConfigurable</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

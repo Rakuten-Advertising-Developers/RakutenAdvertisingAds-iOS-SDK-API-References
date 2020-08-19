@@ -368,135 +368,14 @@
     <span class="n">ad</span><span class="p">?</span><span class="o">.</span><span class="nf">startLoading</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre>
-<h3 id='video-ads' class='heading'>Video Ads</h3>
+<h4 id='video-ads' class='heading'>Video Ads</h4>
 
-<p>For Video ads, in ViewController you need to declare a VideoAdsPresenter instance and Container view, where Video ad will be placed. Refer the following example on how to serve Video Ads. </p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
-    <span class="o">...</span>
-    <span class="k">var</span> <span class="nv">videoAdPresenter</span><span class="p">:</span> <span class="kt">VideoAdsPresenter</span><span class="p">?</span>
-    <span class="k">var</span> <span class="nv">placeholderView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span> <span class="kt">UIView</span><span class="p">()</span>
-    <span class="o">...</span>
-<span class="p">}</span>
-</code></pre>
-
-<p>Then we have to do the following steps.</p>
+<p>Please refer to the <a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK/blob/master/guides/VideoAdsGuide.md">separate guide</a> for video ads </p>
+<h2 id='mediation' class='heading'>Mediation</h2>
 
 <ul>
-<li><p>Load Ad</p>
-<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loadVideoAd</span><span class="p">()</span> <span class="p">{</span>
-
-<span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="kt">VideoAdRequest</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="o">&lt;</span><span class="kt">YOUR_AD_UNIT</span><span class="o">&gt;</span><span class="p">)</span>
-
-<span class="kt">VideoAd</span><span class="o">.</span><span class="nf">loadAd</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
-
-    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">):</span>
-        <span class="k">self</span><span class="p">?</span><span class="o">.</span><span class="nf">configureVideoPresenter</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">ad</span><span class="p">)</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
-        <span class="c1">//Handle error case</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
-</code></pre></li>
-<li><p>Configure VideoAdsPresenter</p>
-<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureVideoPresenter</span><span class="p">(</span><span class="n">with</span> <span class="nv">ad</span><span class="p">:</span> <span class="kt">VideoAd</span><span class="p">)</span> <span class="p">{</span>
-
-<span class="k">if</span> <span class="n">videoAdPresenter</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
-
-    <span class="k">let</span> <span class="nv">presenter</span> <span class="o">=</span> <span class="kt">VideoAdsPresenter</span><span class="p">(</span><span class="nv">containerView</span><span class="p">:</span> <span class="n">placeholderView</span><span class="p">)</span>
-
-    <span class="k">let</span> <span class="nv">actions</span><span class="p">:</span> <span class="p">[</span><span class="kt">VideoOptions</span><span class="o">.</span><span class="kt">Action</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="o">.</span><span class="nf">sound</span><span class="p">(</span><span class="nv">active</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"🔈"</span><span class="p">),</span>
-               <span class="nv">inactive</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"🔇"</span><span class="p">)),</span>
-        <span class="o">.</span><span class="nf">playback</span><span class="p">(</span><span class="nv">active</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"⏸"</span><span class="p">),</span>
-                  <span class="nv">inactive</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"▶️"</span><span class="p">)),</span>
-        <span class="o">.</span><span class="nf">skip</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"Skip ⏭"</span><span class="p">))</span>
-    <span class="p">]</span>
-    <span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">VideoOptions</span><span class="p">(</span><span class="nv">actions</span><span class="p">:</span> <span class="n">actions</span><span class="p">)</span>
-    <span class="n">presenter</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">options</span>
-
-    <span class="n">videoAdPresenter</span> <span class="o">=</span> <span class="n">presenter</span>
-<span class="p">}</span>
-
-<span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="nf">enqueue</span><span class="p">(</span><span class="nv">ad</span><span class="p">:</span> <span class="n">ad</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></li>
-<li><p>Play Video Ad</p>
-<pre class="highlight swift"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">playButtonPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="p">{</span>
-
-<span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="nf">play</span><span class="p">()</span>
-<span class="p">}</span>
-</code></pre></li>
+<li><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK/blob/master/guides/AdMobMediation.md">Google (AdMob &amp; Ad Manager)</a></li>
 </ul>
-
-<p>Optionally implement the VideoAdsPresenterDelegate in your ViewController to handle any additional events.</p>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">VideoAdsPresenterDelegate</span> <span class="p">{</span>
-
-    <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="n">from</span> <span class="nv">presenter</span><span class="p">:</span> <span class="kt">VideoAdsPresenter</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//your implementation </span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
-
-<p>or observe states of played ad, using videoAdPresenter.stateObserver closure</p>
-<pre class="highlight swift"><code> <span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="n">stateObserver</span> <span class="o">=</span> <span class="p">{</span> <span class="n">state</span> <span class="k">in</span>
-
-    <span class="k">switch</span> <span class="n">state</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">stopped</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">):</span>
-       <span class="c1">//your implementation</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">playing</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">,</span> <span class="k">let</span> <span class="nv">progress</span><span class="p">)</span>
-        <span class="c1">//your implementation</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">paused</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">,</span> <span class="k">let</span> <span class="nv">progress</span><span class="p">):</span>
-        <span class="c1">//your implementation</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">completed</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">):</span>
-        <span class="c1">//your implementation</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">skipped</span><span class="p">(</span><span class="k">let</span> <span class="nv">ad</span><span class="p">):</span>
-        <span class="c1">//your implementation</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
-<h3 id='instream-ads' class='heading'>Instream Ads</h3>
-
-<p>Instream ads are video ads that are shown over an existing video player of the host app. They can be shown before, after, or at any point during video content with a seamless transition from ad to app video content.</p>
-
-<p>The approach is pretty similar to regular video ads. But in this case, you have to pass the main video player view as a container</p>
-<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureVideoPresenter</span><span class="p">(</span><span class="n">with</span> <span class="nv">ad</span><span class="p">:</span> <span class="kt">VideoAd</span><span class="p">)</span> <span class="p">{</span>
-
-    <span class="k">if</span> <span class="n">videoAdPresenter</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
-        <span class="n">videoAdPresenter</span> <span class="o">=</span> <span class="kt">VideoAdsPresenter</span><span class="p">(</span><span class="nv">containerView</span><span class="p">:</span> <span class="n">mainPlayerView</span><span class="p">)</span>
-        <span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="n">stateObserver</span> <span class="o">=</span> <span class="nf">handleAds</span><span class="p">(</span><span class="nv">state</span><span class="p">:)</span>
-    <span class="p">}</span>
-    <span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="nf">enqueue</span><span class="p">(</span><span class="nv">ad</span><span class="p">:</span> <span class="n">ad</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre>
-
-<p>To be notified of instream ad lifecycle events, use <code>stateObserver</code> closure</p>
-<pre class="highlight swift"><code> <span class="n">videoAdPresenter</span><span class="p">?</span><span class="o">.</span><span class="n">stateObserver</span> <span class="o">=</span> <span class="p">{</span> <span class="n">state</span> <span class="k">in</span>
-
-    <span class="k">switch</span> <span class="n">state</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nv">paused</span><span class="p">:</span>
-            <span class="c1">//your implementation</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">playing</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="k">let</span> <span class="nv">progress</span><span class="p">):</span>
-        <span class="n">mainPlayer</span><span class="o">.</span><span class="nf">pause</span><span class="p">()</span>
-    <span class="k">case</span> <span class="o">.</span><span class="n">completed</span><span class="p">,</span> <span class="o">.</span><span class="n">skipped</span><span class="p">,</span> <span class="o">.</span><span class="nv">stopped</span><span class="p">:</span>
-        <span class="n">mainPlayer</span><span class="o">.</span><span class="nf">play</span><span class="p">()</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
-
-<p>Also you can control ads playing process via property <code>videoAdPresenter?.player</code> which conforms to protocol <code><a href="Protocols/VideoPlayerProtocol.html">VideoPlayerProtocol</a></code></p>
-<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">VideoPlayerProtocol</span> <span class="p">{</span>
-
-    <span class="k">var</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
-    <span class="k">var</span> <span class="nv">isMuted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
-    <span class="kd">func</span> <span class="nf">mute</span><span class="p">(</span><span class="n">_</span> <span class="nv">mute</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
-    <span class="kd">func</span> <span class="nf">play</span><span class="p">()</span>
-    <span class="kd">func</span> <span class="nf">resume</span><span class="p">()</span>
-    <span class="kd">func</span> <span class="nf">pause</span><span class="p">()</span>
-    <span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span>
-    <span class="kd">func</span> <span class="nf">skip</span><span class="p">()</span>
-<span class="p">}</span>
-</code></pre>
 <h2 id='example' class='heading'>Example</h2>
 
 <p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
@@ -515,7 +394,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2020-08-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2020-08-19)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

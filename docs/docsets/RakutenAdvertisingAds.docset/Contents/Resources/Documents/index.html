@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="RakutenAdvertisingAds  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">RakutenAdvertisingAds 0.0.3 Docs</a> (84% documented)</p>
+        <p><a href="index.html">RakutenAdvertisingAds 0.0.5 Docs</a> (88% documented)</p>
         <p class="header-right"><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -37,7 +45,19 @@
                 <a href="Classes/AdsConfig/AdType.html">– AdType</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/GAPDFPBannerCustomEvent.html">GAPDFPBannerCustomEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/GAPDFPNativeCustomEvent.html">GAPDFPNativeCustomEvent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/RakutenAdvertisingAds.html">RakutenAdvertisingAds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/RakutenBidder.html">RakutenBidder</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/RakutenCustomEventBanner.html">RakutenCustomEventBanner</a>
@@ -86,13 +106,13 @@
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Extensions/GADAdLoader.html">GADAdLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/GADBannerView.html">GADBannerView</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Extensions/URL.html">URL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Extensions/URLSession.html">URLSession</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Extensions.html#/c:objc(cs)NSURLSessionDataTask">URLSessionDataTask</a>
               </li>
             </ul>
           </li>
@@ -107,6 +127,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/AdsConfigurable.html">AdsConfigurable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ConsentInfoProvider.html">ConsentInfoProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/GADAdsLoadable.html">GADAdsLoadable</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/GeoInfoProvider.html">GeoInfoProvider</a>
@@ -127,10 +153,7 @@
                 <a href="Protocols/TargetingInfoProvider.html">TargetingInfoProvider</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/URLSessionDataTaskProtocol.html">URLSessionDataTaskProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/URLSessionProtocol.html">URLSessionProtocol</a>
+                <a href="Protocols/UserAgentProvider.html">UserAgentProvider</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/VideoAdsPresenterDelegate.html">VideoAdsPresenterDelegate</a>
@@ -151,6 +174,14 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/VideoOptions/ResizePolicy.html">– ResizePolicy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:21RakutenAdvertisingAds15RequestModifiera">RequestModifier</a>
               </li>
             </ul>
           </li>
@@ -197,20 +228,71 @@
 <p>Import RakutenAdvertisingAds in your module</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">RakutenAdvertisingAds</span>
 </code></pre>
-<h5 id='gdpr-consent-settings' class='heading'>GDPR Consent settings</h5>
+<h5 id='consent-information' class='heading'>Consent Information</h5>
 
-<p>Assumption is you have separately obtained consents from European users to use their data. if so, use the below code as reference to set the GRPR related information.</p>
-<pre class="highlight swift"><code><span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">targeting</span><span class="o">.</span><span class="n">subjectToGDPR</span> <span class="o">=</span> <span class="kc">true</span>
-<span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">targeting</span><span class="o">.</span><span class="n">gdprMasking</span> <span class="o">=</span> <span class="kc">false</span>
-<span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">targeting</span><span class="o">.</span><span class="n">gdprConsentString</span> <span class="o">=</span> <span class="o">&lt;</span><span class="kt">Some</span> <span class="kt">Consent</span> <span class="kt">String</span><span class="o">&gt;</span>
+<p>According to <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#in-app-details">Consent Management Platform API</a> our SDK receives consent string and GDPR applies state from app&rsquo;s UserDefaults. During request construction SDK try to receive appropriate data from UserDeaults by keys <code>IABTCF_TCString</code> and <code>IABTCF_gdprApplies</code> for CMP v2 (more prioritable) or by keys <code>IABConsent_ConsentString</code> and <code>IABConsent_SubjectToGDPR</code> for CMP v1 accordingly. As an additional option you can manually set flag for GDPR location masking</p>
+<pre class="highlight swift"><code> <span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">consentInfo</span><span class="o">.</span><span class="n">gdprMasking</span> <span class="o">=</span> <span class="kc">false</span>
 </code></pre>
-<h5 id='advertising-identifier' class='heading'>Advertising Identifier</h5>
+<h5 id='idfa' class='heading'>IDFA</h5>
 
-<p>Use the AdSupport framework to obtain an advertising identifier. Please refer apple <a href="https://developer.apple.com/documentation/adsupport">AdSupport</a> documentation for more details.</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AdSupport</span>
+<p>For improving user experience you can also provide advertising information. Starting from iOS 14 Apple made a couple of changes relating to receiving IDFA data. Here code sample which you can use, to retrieve this value for iOS14 and also for previous versions as well.</p>
+
+<blockquote>
+<p>Don&rsquo;t forget to add to Info.plist tracking usage description information</p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>NSUserTrackingUsageDescription<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;string&gt;</span>This identifier will be used to deliver personalized ads to you.<span class="nt">&lt;/string&gt;</span>
 </code></pre>
-<pre class="highlight swift"><code><span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">adSupport</span><span class="o">.</span><span class="n">isTrackingEnabled</span> <span class="o">=</span> <span class="kt">ASIdentifierManager</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="n">isAdvertisingTrackingEnabled</span>
-<span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">adSupport</span><span class="o">.</span><span class="n">advertisingIdentifier</span> <span class="o">=</span> <span class="kt">ASIdentifierManager</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="n">advertisingIdentifier</span><span class="o">.</span><span class="n">uuidString</span>
+</blockquote>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Foundation</span>
+<span class="kd">import</span> <span class="kt">AdSupport</span>
+
+<span class="cp">#if canImport(AppTrackingTransparency)</span>
+    <span class="kd">import</span> <span class="kt">AppTrackingTransparency</span>
+<span class="cp">#endif</span>
+
+<span class="kd">typealias</span> <span class="kt">IDFAFetcherCompletion</span> <span class="o">=</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">UUID</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">())</span>
+
+<span class="kd">class</span> <span class="kt">IDFAFetcher</span> <span class="p">{</span>
+
+    <span class="c1">// MARK: Internal</span>
+
+    <span class="kd">static</span> <span class="kd">func</span> <span class="nf">startFetching</span><span class="p">(</span><span class="n">with</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">IDFAFetcherCompletion</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="k">let</span> <span class="nv">innerCompletion</span><span class="p">:</span> <span class="p">()</span><span class="o">-&gt;</span><span class="p">()</span> <span class="o">=</span> <span class="p">{</span>
+
+            <span class="k">let</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span>
+            <span class="k">if</span> <span class="kd">#available(iOS 14, *)</span> <span class="p">{</span>
+                <span class="n">enabled</span> <span class="o">=</span> <span class="kt">ATTrackingManager</span><span class="o">.</span><span class="n">trackingAuthorizationStatus</span> <span class="o">==</span> <span class="o">.</span><span class="n">authorized</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">enabled</span> <span class="o">=</span> <span class="kt">ASIdentifierManager</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="n">isAdvertisingTrackingEnabled</span>
+            <span class="p">}</span>
+            <span class="k">let</span> <span class="nv">identifier</span> <span class="o">=</span> <span class="kt">ASIdentifierManager</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="n">advertisingIdentifier</span>
+
+            <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">async</span> <span class="p">{</span>
+                <span class="nf">completion</span><span class="p">(</span><span class="n">enabled</span><span class="p">,</span> <span class="n">identifier</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="kd">#available(iOS 14, *)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="kt">ATTrackingManager</span><span class="o">.</span><span class="n">trackingAuthorizationStatus</span> <span class="o">==</span> <span class="o">.</span><span class="n">notDetermined</span> <span class="p">{</span>
+                <span class="kt">ATTrackingManager</span><span class="o">.</span><span class="n">requestTrackingAuthorization</span> <span class="p">{</span> <span class="n">status</span> <span class="k">in</span>
+                    <span class="nf">innerCompletion</span><span class="p">()</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="nf">innerCompletion</span><span class="p">()</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nf">innerCompletion</span><span class="p">()</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Then call it and pass parameters to SDK</p>
+<pre class="highlight swift"><code><span class="kt">IDFAFetcher</span><span class="o">.</span><span class="n">startFetching</span> <span class="p">{</span>
+    <span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">adSupport</span><span class="o">.</span><span class="n">isTrackingEnabled</span> <span class="o">=</span> <span class="nv">$0</span>
+    <span class="kt">RakutenAdvertisingAds</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">adSupport</span><span class="o">.</span><span class="n">advertisingIdentifier</span> <span class="o">=</span> <span class="nv">$1</span><span class="o">.</span><span class="n">uuidString</span>
+<span class="p">}</span>
 </code></pre>
 <h5 id='geographic-location' class='heading'>Geographic Location</h5>
 
@@ -376,6 +458,7 @@
 
 <ul>
 <li><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK/blob/master/guides/AdMobMediation.md">Google (AdMob &amp; Ad Manager)</a></li>
+<li><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK/blob/master/guides/AdMobBidderMediation.md">Google (AdMob &amp; Ad Manager) bidder approach</a></li>
 </ul>
 <h2 id='example' class='heading'>Example</h2>
 
@@ -395,8 +478,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2020-10-06)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2021-03-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

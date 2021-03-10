@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/AdsConfig" class="dashAnchor"></a>
     <a title="AdsConfig Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RakutenAdvertisingAds 0.0.3 Docs</a> (84% documented)</p>
+        <p><a href="../index.html">RakutenAdvertisingAds 0.0.5 Docs</a> (88% documented)</p>
         <p class="header-right"><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -38,7 +46,19 @@
                 <a href="../Classes/AdsConfig/AdType.html">– AdType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GAPDFPBannerCustomEvent.html">GAPDFPBannerCustomEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GAPDFPNativeCustomEvent.html">GAPDFPNativeCustomEvent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/RakutenAdvertisingAds.html">RakutenAdvertisingAds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RakutenBidder.html">RakutenBidder</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/RakutenCustomEventBanner.html">RakutenCustomEventBanner</a>
@@ -87,13 +107,13 @@
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Extensions/GADAdLoader.html">GADAdLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/GADBannerView.html">GADBannerView</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/URL.html">URL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLSession.html">URLSession</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions.html#/c:objc(cs)NSURLSessionDataTask">URLSessionDataTask</a>
               </li>
             </ul>
           </li>
@@ -108,6 +128,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/AdsConfigurable.html">AdsConfigurable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConsentInfoProvider.html">ConsentInfoProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GADAdsLoadable.html">GADAdsLoadable</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/GeoInfoProvider.html">GeoInfoProvider</a>
@@ -128,10 +154,7 @@
                 <a href="../Protocols/TargetingInfoProvider.html">TargetingInfoProvider</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/URLSessionDataTaskProtocol.html">URLSessionDataTaskProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLSessionProtocol.html">URLSessionProtocol</a>
+                <a href="../Protocols/UserAgentProvider.html">UserAgentProvider</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/VideoAdsPresenterDelegate.html">VideoAdsPresenterDelegate</a>
@@ -155,6 +178,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21RakutenAdvertisingAds15RequestModifiera">RequestModifier</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -163,6 +194,7 @@
             <h1>AdsConfig</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdsConfig</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigurable.html">AdsConfigurable</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AdsConfig</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Loadable.html">Loadable</a></span></code></pre>
 
@@ -352,7 +384,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigDelegate.html">AdsConfigDelegate</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigDelegate.html">AdsConfigDelegate</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -380,33 +412,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">requestTimeInterval</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:21RakutenAdvertisingAds0C6ConfigC10urlSessionAA18URLSessionProtocol_pvp"></a>
-                    <a name="//apple_ref/swift/Property/urlSession" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21RakutenAdvertisingAds0C6ConfigC10urlSessionAA18URLSessionProtocol_pvp">urlSession</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">urlSession</span><span class="p">:</span> <span class="kt"><a href="../Protocols/URLSessionProtocol.html">URLSessionProtocol</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -626,13 +631,161 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds0C6ConfigC6adUnit9gadAdSize4typeACSS_So05GADAdI0VAC0H4TypeOtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(adUnit:gadAdSize:type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C6ConfigC6adUnit9gadAdSize4typeACSS_So05GADAdI0VAC0H4TypeOtcfc">init(adUnit:<wbr>gadAdSize:<wbr>type:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize new instanse of <code>AdsConfig</code> class with given parameters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">gadAdSize</span><span class="p">:</span> <span class="kt">GADAdSize</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdsConfig/AdType.html">AdType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adUnit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Ad Unit ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gadAdSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>expected ad size</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>types</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Expected ad type</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>new instanse of <code>AdsConfig</code> class</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds0C6ConfigC6adUnit9gadAdSize5typesACSS_So05GADAdI0VSayAC0H4TypeOGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(adUnit:gadAdSize:types:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C6ConfigC6adUnit9gadAdSize5typesACSS_So05GADAdI0VSayAC0H4TypeOGtcfc">init(adUnit:<wbr>gadAdSize:<wbr>types:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize new instanse of <code>AdsConfig</code> class with given parameters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adUnit</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">gadAdSize</span><span class="p">:</span> <span class="kt">GADAdSize</span><span class="p">,</span> <span class="nv">types</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/AdsConfig/AdType.html">AdType</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adUnit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Ad Unit ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gadAdSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>expected ad size</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>types</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Expected ad types list. Avoid types duplicates</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>new instanse of <code>AdsConfig</code> class</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2020-10-06)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2021-03-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

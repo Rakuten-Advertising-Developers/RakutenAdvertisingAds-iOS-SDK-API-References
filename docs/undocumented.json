@@ -2,203 +2,84 @@
   "warnings": [
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 14,
-      "symbol": "RakutenCustomEventBanner",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 14,
-      "symbol": "RakutenCustomEventBanner",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 18,
-      "symbol": "RakutenCustomEventBanner.delegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 18,
-      "symbol": "RakutenCustomEventBanner.delegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 26,
+      "line": 31,
       "symbol": "RakutenCustomEventBanner.requestAd(_:parameter:label:request:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 26,
+      "line": 31,
       "symbol": "RakutenCustomEventBanner.requestAd(_:parameter:label:request:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 57,
-      "symbol": "RakutenCustomEventBanner",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 57,
-      "symbol": "RakutenCustomEventBanner",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 12,
-      "symbol": "RakutenCustomEventNative",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 12,
-      "symbol": "RakutenCustomEventNative",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 16,
-      "symbol": "RakutenCustomEventNative.delegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 16,
-      "symbol": "RakutenCustomEventNative.delegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 26,
+      "line": 30,
       "symbol": "RakutenCustomEventNative.request(withParameter:request:adTypes:options:rootViewController:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 26,
+      "line": 30,
       "symbol": "RakutenCustomEventNative.request(withParameter:request:adTypes:options:rootViewController:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 56,
+      "line": 60,
       "symbol": "RakutenCustomEventNative.handlesUserClicks()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 56,
+      "line": 60,
       "symbol": "RakutenCustomEventNative.handlesUserClicks()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 61,
+      "line": 65,
       "symbol": "RakutenCustomEventNative.handlesUserImpressions()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 61,
+      "line": 65,
       "symbol": "RakutenCustomEventNative.handlesUserImpressions()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 67,
-      "symbol": "RakutenCustomEventNative",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 67,
-      "symbol": "RakutenCustomEventNative",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
-      "line": 11,
-      "symbol": "GAPDFPBannerCustomEvent",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
-      "line": 15,
-      "symbol": "GAPDFPBannerCustomEvent.delegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
-      "line": 23,
+      "line": 27,
       "symbol": "GAPDFPBannerCustomEvent.requestAd(_:parameter:label:request:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
-      "line": 49,
-      "symbol": "GAPDFPBannerCustomEvent",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
-      "line": 11,
-      "symbol": "GAPDFPNativeCustomEvent",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
-      "line": 15,
-      "symbol": "GAPDFPNativeCustomEvent.delegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
-      "line": 24,
+      "line": 28,
       "symbol": "GAPDFPNativeCustomEvent.request(withParameter:request:adTypes:options:rootViewController:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
-      "line": 50,
+      "line": 54,
       "symbol": "GAPDFPNativeCustomEvent.handlesUserClicks()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
-      "line": 55,
+      "line": 59,
       "symbol": "GAPDFPNativeCustomEvent.handlesUserImpressions()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

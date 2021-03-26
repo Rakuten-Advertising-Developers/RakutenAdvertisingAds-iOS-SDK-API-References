@@ -197,6 +197,7 @@
                   
                   <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">GAPDFPNativeCustomEvent</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">GADCustomEventNativeAd</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">GAPDFPNativeCustomEvent</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigDelegate.html">AdsConfigDelegate</a></span></code></pre>
 
                 </div>
               </div>
@@ -340,12 +341,90 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds0C14ConfigDelegateP11didLoadData03adsD08dataTypeyAA0C12Configurable_p_AA0cdhK0OtF"></a>
+                    <a name="//apple_ref/swift/Method/didLoadData(adsConfig:dataType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C14ConfigDelegateP11didLoadData03adsD08dataTypeyAA0C12Configurable_p_AA0cdhK0OtF">didLoadData(adsConfig:<wbr>dataType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didLoadData</span><span class="p">(</span><span class="nv">adsConfig</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigurable.html">AdsConfigurable</a></span><span class="p">,</span> <span class="nv">dataType</span><span class="p">:</span> <span class="kt"><a href="../Enums/AdsConfigDataType.html">AdsConfigDataType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds0C14ConfigDelegateP15didFailLoadData03adsD05erroryAA0C12Configurable_p_s5Error_ptF"></a>
+                    <a name="//apple_ref/swift/Method/didFailLoadData(adsConfig:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C14ConfigDelegateP15didFailLoadData03adsD05erroryAA0C12Configurable_p_s5Error_ptF">didFailLoadData(adsConfig:<wbr>error:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didFailLoadData</span><span class="p">(</span><span class="nv">adsConfig</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigurable.html">AdsConfigurable</a></span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21RakutenAdvertisingAds0C14ConfigDelegateP20willLeaveApplication4fromyAA0C12Configurable_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/willLeaveApplication(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21RakutenAdvertisingAds0C14ConfigDelegateP20willLeaveApplication4fromyAA0C12Configurable_p_tF">willLeaveApplication(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="n">from</span> <span class="nv">adsConfig</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigurable.html">AdsConfigurable</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2021-03-11)</p>
+          <p>&copy; 2021 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2021-03-26)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

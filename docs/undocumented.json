@@ -1,6 +1,41 @@
 {
   "warnings": [
     {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/Protocols/SourceryProtocols.swift",
+      "line": 16,
+      "symbol": "AutoMockable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/Protocols/SourceryProtocols.swift",
+      "line": 16,
+      "symbol": "AutoMockable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/Protocols/SourceryProtocols.swift",
+      "line": 16,
+      "symbol": "AutoMockable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/Protocols/SourceryProtocols.swift",
+      "line": 16,
+      "symbol": "AutoMockable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/Protocols/SourceryProtocols.swift",
+      "line": 16,
+      "symbol": "AutoMockable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
       "line": 31,
       "symbol": "RakutenCustomEventBanner.requestAd(_:parameter:label:request:)",

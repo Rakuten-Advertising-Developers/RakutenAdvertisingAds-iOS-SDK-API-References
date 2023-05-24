@@ -1,10 +1,73 @@
 {
   "warnings": [
     {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/Protocols/SourceryProtocols.swift",
-      "line": 16,
-      "symbol": "AutoMockable",
-      "symbol_kind": "source.lang.swift.decl.protocol",
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 10,
+      "symbol": "CachedObject",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 10,
+      "symbol": "CachedObject",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 10,
+      "symbol": "CachedObject",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 10,
+      "symbol": "CachedObject",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 10,
+      "symbol": "CachedObject",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 11,
+      "symbol": "AdUnit",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 11,
+      "symbol": "AdUnit",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 11,
+      "symbol": "AdUnit",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 11,
+      "symbol": "AdUnit",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Cache/CacheStorage.swift",
+      "line": 11,
+      "symbol": "AdUnit",
+      "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
@@ -33,89 +96,551 @@
       "line": 16,
       "symbol": "AutoMockable",
       "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/Protocols/SourceryProtocols.swift",
+      "line": 16,
+      "symbol": "AutoMockable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/RakutenAdvertisingAds.swift",
+      "line": 10,
+      "symbol": "RakutenAdvertisingAds.version",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/RakutenAdvertisingAds.swift",
+      "line": 10,
+      "symbol": "RakutenAdvertisingAds.version",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/RakutenAdvertisingAds.swift",
+      "line": 10,
+      "symbol": "RakutenAdvertisingAds.version",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/RakutenAdvertisingAds.swift",
+      "line": 10,
+      "symbol": "RakutenAdvertisingAds.version",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Core/Common/RakutenAdvertisingAds.swift",
+      "line": 10,
+      "symbol": "RakutenAdvertisingAds.version",
+      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 31,
-      "symbol": "RakutenCustomEventBanner.requestAd(_:parameter:label:request:)",
+      "line": 33,
+      "symbol": "RakutenCustomEventBanner.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
+      "line": 33,
+      "symbol": "RakutenCustomEventBanner.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
+      "line": 40,
+      "symbol": "RakutenCustomEventBanner.adapterVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
+      "line": 40,
+      "symbol": "RakutenCustomEventBanner.adapterVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
+      "line": 44,
+      "symbol": "RakutenCustomEventBanner.adSDKVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
+      "line": 44,
+      "symbol": "RakutenCustomEventBanner.adSDKVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
+      "line": 48,
+      "symbol": "RakutenCustomEventBanner.networkExtrasClass()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
+      "line": 48,
+      "symbol": "RakutenCustomEventBanner.networkExtrasClass()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
+      "line": 52,
+      "symbol": "RakutenCustomEventBanner.loadBanner(for:completionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventBanner.swift",
-      "line": 31,
-      "symbol": "RakutenCustomEventBanner.requestAd(_:parameter:label:request:)",
+      "line": 52,
+      "symbol": "RakutenCustomEventBanner.loadBanner(for:completionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 30,
-      "symbol": "RakutenCustomEventNative.request(withParameter:request:adTypes:options:rootViewController:)",
+      "line": 55,
+      "symbol": "RakutenCustomEventNative.adapterVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 55,
+      "symbol": "RakutenCustomEventNative.adapterVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 59,
+      "symbol": "RakutenCustomEventNative.adSDKVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 59,
+      "symbol": "RakutenCustomEventNative.adSDKVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 63,
+      "symbol": "RakutenCustomEventNative.networkExtrasClass()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 63,
+      "symbol": "RakutenCustomEventNative.networkExtrasClass()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 67,
+      "symbol": "RakutenCustomEventNative.loadNativeAd(for:completionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 30,
-      "symbol": "RakutenCustomEventNative.request(withParameter:request:adTypes:options:rootViewController:)",
+      "line": 67,
+      "symbol": "RakutenCustomEventNative.loadNativeAd(for:completionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 60,
+      "line": 104,
+      "symbol": "RakutenCustomEventNative.headline",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 104,
+      "symbol": "RakutenCustomEventNative.headline",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 108,
+      "symbol": "RakutenCustomEventNative.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 108,
+      "symbol": "RakutenCustomEventNative.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 112,
+      "symbol": "RakutenCustomEventNative.body",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 112,
+      "symbol": "RakutenCustomEventNative.body",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 116,
+      "symbol": "RakutenCustomEventNative.icon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 116,
+      "symbol": "RakutenCustomEventNative.icon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 120,
+      "symbol": "RakutenCustomEventNative.callToAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 120,
+      "symbol": "RakutenCustomEventNative.callToAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 124,
+      "symbol": "RakutenCustomEventNative.starRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 124,
+      "symbol": "RakutenCustomEventNative.starRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 128,
+      "symbol": "RakutenCustomEventNative.store",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 128,
+      "symbol": "RakutenCustomEventNative.store",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 132,
+      "symbol": "RakutenCustomEventNative.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 132,
+      "symbol": "RakutenCustomEventNative.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 136,
+      "symbol": "RakutenCustomEventNative.advertiser",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 136,
+      "symbol": "RakutenCustomEventNative.advertiser",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 140,
+      "symbol": "RakutenCustomEventNative.extraAssets",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 140,
+      "symbol": "RakutenCustomEventNative.extraAssets",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 144,
       "symbol": "RakutenCustomEventNative.handlesUserClicks()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 60,
+      "line": 144,
       "symbol": "RakutenCustomEventNative.handlesUserClicks()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 65,
+      "line": 148,
       "symbol": "RakutenCustomEventNative.handlesUserImpressions()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
-      "line": 65,
+      "line": 148,
       "symbol": "RakutenCustomEventNative.handlesUserImpressions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 152,
+      "symbol": "RakutenCustomEventNative.didRender(in:clickableAssetViews:nonclickableAssetViews:viewController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 152,
+      "symbol": "RakutenCustomEventNative.didRender(in:clickableAssetViews:nonclickableAssetViews:viewController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 164,
+      "symbol": "RakutenCustomEventNative.didUntrackView(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 164,
+      "symbol": "RakutenCustomEventNative.didUntrackView(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 168,
+      "symbol": "RakutenCustomEventNative.didRecordClickOnAsset(withName:view:viewController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMob/RakutenCustomEventNative.swift",
+      "line": 168,
+      "symbol": "RakutenCustomEventNative.didRecordClickOnAsset(withName:view:viewController:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
-      "line": 27,
-      "symbol": "GAPDFPBannerCustomEvent.requestAd(_:parameter:label:request:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 44,
+      "symbol": "GAPDFPBannerCustomEvent.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
-      "line": 30,
-      "symbol": "GAPDFPNativeCustomEvent.request(withParameter:request:adTypes:options:rootViewController:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
+      "line": 51,
+      "symbol": "GAPDFPBannerCustomEvent.adapterVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
+      "line": 55,
+      "symbol": "GAPDFPBannerCustomEvent.adSDKVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
       "line": 59,
+      "symbol": "GAPDFPBannerCustomEvent.networkExtrasClass()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPBannerCustomEvent.swift",
+      "line": 63,
+      "symbol": "GAPDFPBannerCustomEvent.loadBanner(for:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 41,
+      "symbol": "GAPDFPNativeCustomEvent.adapterVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 45,
+      "symbol": "GAPDFPNativeCustomEvent.adSDKVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 49,
+      "symbol": "GAPDFPNativeCustomEvent.networkExtrasClass()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 53,
+      "symbol": "GAPDFPNativeCustomEvent.loadNativeAd(for:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 84,
+      "symbol": "GAPDFPNativeCustomEvent.headline",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 88,
+      "symbol": "GAPDFPNativeCustomEvent.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 92,
+      "symbol": "GAPDFPNativeCustomEvent.body",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 96,
+      "symbol": "GAPDFPNativeCustomEvent.icon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 100,
+      "symbol": "GAPDFPNativeCustomEvent.callToAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 104,
+      "symbol": "GAPDFPNativeCustomEvent.starRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 108,
+      "symbol": "GAPDFPNativeCustomEvent.store",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 112,
+      "symbol": "GAPDFPNativeCustomEvent.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 116,
+      "symbol": "GAPDFPNativeCustomEvent.advertiser",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 120,
+      "symbol": "GAPDFPNativeCustomEvent.extraAssets",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 124,
       "symbol": "GAPDFPNativeCustomEvent.handlesUserClicks()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
-      "line": 64,
+      "line": 128,
       "symbol": "GAPDFPNativeCustomEvent.handlesUserImpressions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 132,
+      "symbol": "GAPDFPNativeCustomEvent.didRender(in:clickableAssetViews:nonclickableAssetViews:viewController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 144,
+      "symbol": "GAPDFPNativeCustomEvent.didUntrackView(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/GAPDFPNativeCustomEvent.swift",
+      "line": 148,
+      "symbol": "GAPDFPNativeCustomEvent.didRecordClickOnAsset(withName:view:viewController:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -138,6 +663,20 @@
       "line": 62,
       "symbol": "RakutenBidder.load(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/RakutenBidder.swift",
+      "line": 124,
+      "symbol": "RakutenBidderCachable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ts-andrii.durbalo/Development/Rakuten/github.com/RakutenAdvertisingAds-iOS-SDK/Source/Mediation/AdMobBidderMediation/RakutenBidder.swift",
+      "line": 126,
+      "symbol": "RakutenBidderCachable.adsConfigForBannerCustomEventMediation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {

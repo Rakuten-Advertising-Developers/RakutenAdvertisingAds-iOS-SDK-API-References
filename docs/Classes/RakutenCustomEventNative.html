@@ -17,19 +17,19 @@
     <a title="RakutenCustomEventNative Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RakutenAdvertisingAds 0.0.6 Docs</a> (94% documented)</p>
-        <p class="header-right"><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK"><img src="../img/gh.png"/>View on GitHub</a></p>
-        <p class="header-right">
+        <p><a href="../index.html">RakutenAdvertisingAds 0.0.10 Docs</a> (87% documented)</p>
+        <p class="header-right"><a href="https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAds-iOS-SDK"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
           </form>
-        </p>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">RakutenAdvertisingAds Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         RakutenCustomEventNative Class Reference
       </p>
     </div>
@@ -133,6 +133,9 @@
                 <a href="../Protocols.html#/s:21RakutenAdvertisingAds12AutoMockableP">AutoMockable</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/CacheStorage.html">CacheStorage</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/ConsentInfoProvider.html">ConsentInfoProvider</a>
               </li>
               <li class="nav-group-task">
@@ -152,6 +155,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/NativeAdRepresentable.html">NativeAdRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RakutenBidderCachable.html">RakutenBidderCachable</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/TargetingInfoProvider.html">TargetingInfoProvider</a>
@@ -185,6 +191,12 @@
             <a href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21RakutenAdvertisingAds6AdUnita">AdUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21RakutenAdvertisingAds12CachedObjecta">CachedObject</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Typealiases.html#/s:21RakutenAdvertisingAds15RequestModifiera">RequestModifier</a>
               </li>
             </ul>
@@ -199,8 +211,10 @@
                 <div class="language">
                   
                   <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">RakutenCustomEventNative</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">GADCustomEventNativeAd</span></code></pre>
+<span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">RakutenCustomEventNative</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">RakutenCustomEventNative</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdsConfigDelegate.html">AdsConfigDelegate</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">RakutenCustomEventNative</span><span class="p">:</span> <span class="kt">GADMediationAdapter</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">RakutenCustomEventNative</span><span class="p">:</span> <span class="kt">GADMediationNativeAd</span></code></pre>
 
                 </div>
               </div>
@@ -209,141 +223,7 @@
           </section>
           <section class="section task-group-section">
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Properties"></a>
-                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Properties"></a>
-                  <h3 class="section-name"><p>Properties</p>
-</h3>
-                </div>
-              </div>
               <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)delegate"></a>
-                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)delegate">delegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>delegate</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">GADCustomEventNativeAdDelegate</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Public"></a>
-                <a name="//apple_ref/swift/Section/Public" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Public"></a>
-                  <h3 class="section-name"><p>Public</p>
-</h3>
-                </div>
-              </div>
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)requestNativeAdWithParameter:request:adTypes:options:rootViewController:"></a>
-                    <a name="//apple_ref/swift/Method/request(withParameter:request:adTypes:options:rootViewController:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)requestNativeAdWithParameter:request:adTypes:options:rootViewController:">request(withParameter:<wbr>request:<wbr>adTypes:<wbr>options:<wbr>rootViewController:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">request</span><span class="p">(</span><span class="n">withParameter</span> <span class="nv">serverParameter</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                    <span class="nv">request</span><span class="p">:</span> <span class="kt">GADCustomEventRequest</span><span class="p">,</span>
-                    <span class="nv">adTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span>
-                    <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span>
-                    <span class="nv">rootViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)handlesUserClicks"></a>
-                    <a name="//apple_ref/swift/Method/handlesUserClicks()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)handlesUserClicks">handlesUserClicks()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handlesUserClicks</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)handlesUserImpressions"></a>
-                    <a name="//apple_ref/swift/Method/handlesUserImpressions()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)handlesUserImpressions">handlesUserImpressions()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handlesUserImpressions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -422,16 +302,533 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(cm)adapterVersion"></a>
+                    <a name="//apple_ref/swift/Method/adapterVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(cm)adapterVersion">adapterVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">adapterVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">GADVersionNumber</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(cm)adSDKVersion"></a>
+                    <a name="//apple_ref/swift/Method/adSDKVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(cm)adSDKVersion">adSDKVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">adSDKVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">GADVersionNumber</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(cm)networkExtrasClass"></a>
+                    <a name="//apple_ref/swift/Method/networkExtrasClass()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(cm)networkExtrasClass">networkExtrasClass()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">networkExtrasClass</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">GADAdNetworkExtras</span><span class="o">.</span><span class="k">Type</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)loadNativeAdForAdConfiguration:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/loadNativeAd(for:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)loadNativeAdForAdConfiguration:completionHandler:">loadNativeAd(for:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadNativeAd</span><span class="p">(</span><span class="k">for</span> <span class="nv">adConfiguration</span><span class="p">:</span> <span class="kt">GADMediationNativeAdConfiguration</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">GADMediationNativeLoadCompletionHandler</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)headline"></a>
+                    <a name="//apple_ref/swift/Property/headline" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)headline">headline</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">headline</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)images"></a>
+                    <a name="//apple_ref/swift/Property/images" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)images">images</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">images</span><span class="p">:</span> <span class="p">[</span><span class="kt">GADNativeAdImage</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)body"></a>
+                    <a name="//apple_ref/swift/Property/body" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)body">body</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)icon"></a>
+                    <a name="//apple_ref/swift/Property/icon" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)icon">icon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">icon</span><span class="p">:</span> <span class="kt">GADNativeAdImage</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)callToAction"></a>
+                    <a name="//apple_ref/swift/Property/callToAction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)callToAction">callToAction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">callToAction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)starRating"></a>
+                    <a name="//apple_ref/swift/Property/starRating" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)starRating">starRating</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">starRating</span><span class="p">:</span> <span class="kt">NSDecimalNumber</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)store"></a>
+                    <a name="//apple_ref/swift/Property/store" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)store">store</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">store</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)price"></a>
+                    <a name="//apple_ref/swift/Property/price" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)price">price</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">price</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)advertiser"></a>
+                    <a name="//apple_ref/swift/Property/advertiser" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)advertiser">advertiser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">advertiser</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)extraAssets"></a>
+                    <a name="//apple_ref/swift/Property/extraAssets" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(py)extraAssets">extraAssets</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">extraAssets</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)handlesUserClicks"></a>
+                    <a name="//apple_ref/swift/Method/handlesUserClicks()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)handlesUserClicks">handlesUserClicks()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handlesUserClicks</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)handlesUserImpressions"></a>
+                    <a name="//apple_ref/swift/Method/handlesUserImpressions()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)handlesUserImpressions">handlesUserImpressions()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handlesUserImpressions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)didRenderInView:clickableAssetViews:nonclickableAssetViews:viewController:"></a>
+                    <a name="//apple_ref/swift/Method/didRender(in:clickableAssetViews:nonclickableAssetViews:viewController:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)didRenderInView:clickableAssetViews:nonclickableAssetViews:viewController:">didRender(in:<wbr>clickableAssetViews:<wbr>nonclickableAssetViews:<wbr>viewController:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didRender</span><span class="p">(</span><span class="k">in</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span>
+                      <span class="nv">clickableAssetViews</span><span class="p">:</span> <span class="p">[</span><span class="kt">GADNativeAssetIdentifier</span> <span class="p">:</span> <span class="kt">UIView</span><span class="p">],</span>
+                      <span class="nv">nonclickableAssetViews</span><span class="p">:</span> <span class="p">[</span><span class="kt">GADNativeAssetIdentifier</span> <span class="p">:</span> <span class="kt">UIView</span><span class="p">],</span>
+                      <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)didUntrackView:"></a>
+                    <a name="//apple_ref/swift/Method/didUntrackView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)didUntrackView:">didUntrackView(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didUntrackView</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)didRecordClickOnAssetWithName:view:viewController:"></a>
+                    <a name="//apple_ref/swift/Method/didRecordClickOnAsset(withName:view:viewController:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RakutenAdvertisingAds@objc(cs)RakutenCustomEventNative(im)didRecordClickOnAssetWithName:view:viewController:">didRecordClickOnAsset(withName:<wbr>view:<wbr>viewController:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didRecordClickOnAsset</span><span class="p">(</span><span class="n">withName</span> <span class="nv">assetName</span><span class="p">:</span> <span class="kt">GADNativeAssetIdentifier</span><span class="p">,</span>
+                                  <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span>
+                                  <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external">Rakuten Advertising</a>. All rights reserved. (Last updated: 2021-12-13)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="https://github.com/Rakuten-Advertising-Developers/" target="_blank" rel="external noopener">Rakuten Advertising</a>. All rights reserved. (Last updated: 2023-05-24)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>
